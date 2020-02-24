@@ -26,6 +26,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
+import android.graphics.PaintFlagsDrawFilter;
 import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.drawable.Animatable;
@@ -436,6 +437,9 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
         startAngle = (mStartTrim + mRotation) * 360;
         endAngle = (mEndTrim + mRotation) * 360;
         float sweepAngle = endAngle - startAngle;
+
+        // 抗锯齿
+        canvas.setDrawFilter(new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG));
 
         Paint paint = new Paint();
         paint.setAntiAlias(true);
