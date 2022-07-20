@@ -1,4 +1,4 @@
-package com.assess15.swiperefreshlayoutupdate
+package com.laychv.swiperefreshlayout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

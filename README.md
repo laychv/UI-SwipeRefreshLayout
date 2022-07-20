@@ -6,9 +6,12 @@
 
 主要修改类: CircularProgressDrawable
 
-注意：
+**注意：**
+
 1.图标在文件夹的位置
+
 2.抗锯齿
+
 ```Java
 // Canvas的抗锯齿
 canvas.setDrawFilter(new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG));

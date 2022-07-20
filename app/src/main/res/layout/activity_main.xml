@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.assess15.swiperefreshlayoutupdate.source.SwipeRefreshLayout
+    <com.laychv.swiperefreshlayout.source.SwipeRefreshLayout
         android:id="@+id/srl"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -18,7 +18,7 @@
             android:gravity="center"
             android:text="自定义图标" />
 
-    </com.assess15.swiperefreshlayoutupdate.source.SwipeRefreshLayout>
+    </com.laychv.swiperefreshlayout.source.SwipeRefreshLayout>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
